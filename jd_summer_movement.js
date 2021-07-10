@@ -6,7 +6,7 @@
  const $ = new Env('燃动夏季');
  const notify = $.isNode() ? require('./sendNotify') : '';
  const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
- const helpAuthorFlag = true;//是否助力作者SH  true 助力，false 不助力
+ const helpAuthorFlag = false;//是否助力作者SH  true 助力，false 不助力
  const https = require('https');
  const fs = require('fs').promises;
  const { R_OK } = require('fs').constants;
@@ -127,9 +127,9 @@
    if(helpAuthorFlag){
      let res = [],res2 = [],res3 = []; //zero205：我自己的互助码加在star大佬后面
      try{
-       res = await getAuthorShareCode('http://cdn.trueorfalse.top/392b03aabdb848d0b7e5ae499ef24e35/');
-       res2 = await getAuthorShareCode(`https://cdn.jsdelivr.net/gh/gitupdate/updateTeam@master/shareCodes/jd_zoo.json?${new Date()}`);
-       res3 = await getAuthorShareCode(`https://cdn.jsdelivr.net/gh/zero205/updateTeam@main/shareCodes/jd_zero205_summer.json?${new Date()}`);
+       res = await getAuthorShareCode('');
+       res2 = await getAuthorShareCode(``);
+       res3 = await getAuthorShareCode(``);
      }catch (e) {}
      if(!res){res = [];}
      if(!res2){res2 = [];}
