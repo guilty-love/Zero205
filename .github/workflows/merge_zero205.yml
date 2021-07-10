@@ -2,7 +2,7 @@
 name: merge-from-zero205
 on:
   schedule:
-    - cron: '1 0,15 * * *'
+    - cron: '1 */2 * * *'
   workflow_dispatch:
   watch:
     types: started
