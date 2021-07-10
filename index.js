@@ -24,8 +24,8 @@ exports.main_handler = async (event, context, callback) => {
           if (!TENCENTSCF_SOURCE_URL) return console.log('自定义模式需要设置TENCENTSCF_SOURCE_URL变量')
           request(`${TENCENTSCF_SOURCE_URL}${v}.js`, function (error, response, body) {
             eval(response.body)
-         // })
-          //break;
+          })
+          break;
         default:
           //执行自己上传的js文件
           //delete require.cache[require.resolve('./'+v+'.js')];
