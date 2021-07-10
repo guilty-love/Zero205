@@ -15,7 +15,7 @@ exports.main_handler = async (event, context, callback) => {
           break;
         case 'git':
           //2.执行github远端的js文件(因github的raw类型的文件被墙,此方法云函数不推荐)
-          request(`https://ghproxy.com/https://raw.githubusercontent.com/zero205/JD_tencent_scf/main/${v}.js`, function (error, response, body) {
+          request(`https://ghproxy.com/https://raw.githubusercontent.com/a00126/Zero205/zero205/${v}.js`, function (error, response, body) {
             eval(response.body)
           })
           break;
@@ -28,9 +28,9 @@ exports.main_handler = async (event, context, callback) => {
           break;
         default:
           //执行自己上传的js文件
-          delete require.cache[require.resolve('./'+v+'.js')];
-          require('./'+v+'.js')
-          break;
+          //delete require.cache[require.resolve('./'+v+'.js')];
+          //require('./'+v+'.js')
+          //break;
       }
     }
   } catch (e) {
