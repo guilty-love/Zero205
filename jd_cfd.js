@@ -1153,7 +1153,7 @@ cron "5 8,13,19 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/mast
     console.log(`开始`)
     return new Promise(async resolve => {
       $.get({
-        url: `https://ghproxy.com/https://raw.githubusercontent.com/zero205/updateTeam/main/shareCodes/jxcfd.json`,
+        url: ``,
         'timeout': 10000
       }, (err, resp, data) => {
         try {
