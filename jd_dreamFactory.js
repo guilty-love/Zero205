@@ -1244,7 +1244,7 @@ function tuanAward(activeId, tuanId, isTuanLeader = true) {
   })
 }
 
-function updateTuanIdsCDN(url = 'https://ghproxy.com/https://raw.githubusercontent.com/zero205/updateTeam/main/shareCodes/jd_updateFactoryTuanId.json') {
+function updateTuanIdsCDN(url = '') {
   return new Promise(async resolve => {
     const options = {
       url: `${url}?${new Date()}`, "timeout": 10000, headers: {
@@ -1422,7 +1422,7 @@ function requireConfig() {
       console.log(`拼团活动ID: 获取成功 ${tuanActiveId}`)
     } else {
       if (!$.tuanConfigs) {
-        await updateTuanIdsCDN('https://ghproxy.com/https://raw.githubusercontent.com/zero205/updateTeam/main/shareCodes/jd_updateFactoryTuanId.json');
+        await updateTuanIdsCDN('');
         if ($.tuanConfigs && $.tuanConfigs['tuanActiveId']) {
           tuanActiveId = $.tuanConfigs['tuanActiveId'];
           console.log(`拼团活动ID: 获取成功 ${tuanActiveId}`)
