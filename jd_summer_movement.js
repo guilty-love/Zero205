@@ -36,20 +36,20 @@ $.inviteList = [];
 $.secretpInfo = {};
 $.ShInviteList = [];
 $.innerShInviteList = [
-  'H8mphLbwLgz3e4GeFdc0g9GS9KyvaS3S',
-  'H8mphLbwLn_LHtvAULB0thOUapqKwhU',
-  'H8mphLbwLnPnJ8L9XqdUv7O1wfsqrXQ',
-  'H8mphLbwLg_xLIKcQ9I30BOoZKpsdike',//zero205：我的互助码，加在smiek2221大佬后面
-  'H8mphLbwLg2gd4rIQoEz19OIROyGRmqQ',
-  'H8mphLbwLgz2ftDOEtQx1Yp-v5_fkMS_',
-  'H8mphO2nRAmleYWfHtA0uY-QzpCd'
+  '',
+  '',
+  '',
+  '',//zero205：我的互助码，加在smiek2221大佬后面
+  '',
+  '',
+  ''
 ];
 $.zero205inviteList = [
-  'HcmphLbwLg_xLIKcQ9I30NPhOrh49S_zGqJfiyTNe3K6JsRD6BSa9AIiEUYdfyhta-M5JPJOW1K1kRVSql1v2Q',
-  'HcmphLbwLg2gd4rIQoEz18GMTeJIIu04Rk818RwvbWue16YmZ7fIGUfq_FlVKNu608HZ2zsqUhh7HVLwsupFrg',
-  'HcmphLbwLgz2ftDOEtQx1bjvXFuX5qPpudaqlx4pPjNFfpwu_d1Tye71AqsqmvzL3GBah4hRPOvh-GrV8ktvOg',
-  'HcmphO2nRAmleYWfHtA0uQet2oBSrx_6LqhqTBgnpKIMFTDkRWzWn02ibhGLRrufBaH5LQPWEKgw',
-  'HcmphLbwLnbqGMrzbr5pgLC2aqTWpoQSfKjjFsB2tA_Gce0D6FKHbOaXxtZEaYnd-qq42I52W3AcYZ0EJQ'
+  '',
+  '',
+  '',
+  '',
+  ''
 ];
 
 if ($.isNode()) {
