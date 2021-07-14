@@ -25,8 +25,8 @@ const MoveMentFaker = require('./MovementFaker')
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
-const ShHelpFlag = true;//是否SH助力  true 助力，false 不助力
-const ShHelpAuthorFlag = true;//是否助力作者SH  true 助力，false 不助力
+const ShHelpFlag = false;//是否SH助力  true 助力，false 不助力
+const ShHelpAuthorFlag = false;//是否助力作者SH  true 助力，false 不助力
 const OPEN_MEMBERCARD = (process.env.OPEN_MEMBERCARD && process.env.OPEN_MEMBERCARD === "true") ? true : false //默认不开通会员卡
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [];
@@ -35,10 +35,10 @@ $.inviteList = [];
 $.secretpInfo = {};
 $.ShInviteList = [];
 $.innerShInviteList = [
-  'H8mphLbwLg_xLIKcQ9I30BOoZKpsdike',
-  'H8mphLbwLg2gd4rIQoEz19OIROyGRmqQ',
-  'H8mphLbwLgz2ftDOEtQx1Yp-v5_fkMS_',
-  'H8mphO2nRAmleYWfHtA0uY-QzpCd'
+  '',
+  '',
+  '',
+  ''
 ];
 $.appid = 'o2_act';
 if ($.isNode()) {
@@ -86,17 +86,17 @@ if ($.isNode()) {
     }
   }
   // 助力
-  let res = await getAuthorShareCode('https://raw.githubusercontent.com/Aaron-lv/updateTeam/master/shareCodes/jd_summer_movement_sh.json')
+  let res = await getAuthorShareCode('')
   if (!res) {
-    $.http.get({url: 'https://purge.jsdelivr.net/gh/Aaron-lv/updateTeam@master/shareCodes/jd_summer_movement_sh.json'}).then((resp) => {}).catch((e) => $.log('刷新CDN异常', e));
+    $.http.get({url: ''}).then((resp) => {}).catch((e) => $.log('刷新CDN异常', e));
     await $.wait(1000)
-    res = await getAuthorShareCode('https://cdn.jsdelivr.net/gh/Aaron-lv/updateTeam@master/shareCodes/jd_summer_movement_sh.json') || []
+    res = await getAuthorShareCode('') || []
   }
-  let res2 = await getAuthorShareCode('https://raw.githubusercontent.com/Aaron-lv/updateTeam/master/shareCodes/jd_summer_movement.json')
+  let res2 = await getAuthorShareCode('')
   if (!res2) {
-    $.http.get({url: 'https://purge.jsdelivr.net/gh/Aaron-lv/updateTeam@master/shareCodes/jd_summer_movement.json'}).then((resp) => {}).catch((e) => $.log('刷新CDN异常', e));
+    $.http.get({url: ''}).then((resp) => {}).catch((e) => $.log('刷新CDN异常', e));
     await $.wait(1000)
-    res2 = await getAuthorShareCode('https://cdn.jsdelivr.net/gh/Aaron-lv/updateTeam@master/shareCodes/jd_summer_movement.json') || []
+    res2 = await getAuthorShareCode('') || []
   }
   if (ShHelpAuthorFlag) {
     $.innerShInviteList = getRandomArrayElements([...$.innerShInviteList, ...res], [...$.innerShInviteList, ...res].length);
