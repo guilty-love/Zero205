@@ -31,9 +31,8 @@ if ($.isNode()) {
     ].filter((item) => !!item);
 }
 
-
 const JD_API_HOST = "https://api.m.jd.com/client.action";
-$.helpAuthor = false;
+$.helpAuthor = true;
 !(async () => {
     if (!cookiesArr[0]) {
         $.msg(
