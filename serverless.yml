@@ -28,13 +28,13 @@ inputs:
           name: beansign_clublottery_shop_try
           cronExpression: "0 1 0 * * * *"
           enable: true
-          argument: jd_bean_sign&jd_club_lottery&jd_shop&jd_try&jd_summer_movement_card&jd_dpqd&jd_car
+          argument: jd_bean_sign&jd_club_lottery&jd_shop&jd_try&jd_dpqd&jd_car
     - timer: #取关京东店铺商品 #京东抽奖机 #京东秒秒币 #天天提鹅 #领金贴
         parameters:
           name: unsubscribe_lotteryMachine_car_ms_jintie
           cronExpression: "0 0 0 * * * *"
           enable: true
-          argument: jd_unsubscribe&jd_lotteryMachine&jd_blueCoin&jd_ms&jd_jin_tie&jd_get_share_code
+          argument: jd_unsubscribe&jd_lotteryMachine&jd_jxqd_jd_sign&jd_ms&jd_jin_tie&jd_get_share_code
     - timer: #东东农场 #东东萌宠 #京喜农场 #京东极速版红包 #口袋书店 #健康社区
         parameters:
           name: fruit_pet_jxnc_speedsign_speedredpocke_bookshop
@@ -55,10 +55,10 @@ inputs:
           argument: jd_cash&jd_small_home&jd_live&jd_gold_creator&jd_mohe
     - timer: #天天提鹅 #抢京豆 #燃动夏季
         parameters:
-          name: healthcommunity_dailyegg_summer
+          name: healthcommunity_dailyegg_joy_summer
           cronExpression: "2 15 9,8-23/2 * * * *"
           enable: true
-          argument: jd_daily_egg&jd_zjb&jd_summer_movement
+          argument: jd_daily_egg&jd_zjb&jd_joy
     - timer: #全民开红包 #东东超市 #京喜牧场 #健康社区收取能量
         parameters:
           name: superMarket_jxmc_healthenergy
@@ -66,11 +66,12 @@ inputs:
           enable: true
           argument: jd_superMarket&jd_jxmc&jd_z_health_energy
     - timer: #宠汪汪 #汪汪乐园 #京享值PK #柠檬推一推
+
         parameters:
-          name: joy_joypark_pk
+          name: joysteal_joypark_pk
           cronExpression: "0 5 0,6-23/3 * * * *"
           enable: true
-          argument: jd_joy&jd_joy_park&jd_ddo_pk&jd_tyt
+          argument: jd_joy_steal&jd_joy_park&jd_ddo_pk&jd_tyt
     - timer: #京豆变动通知 #疯狂的joy #京东排行榜 #领京豆额外奖励 #闪购盲盒 #京小兑 #特物z #粉丝互动
         parameters:
           name: beanchange_crazyjoy_rankingList_beanhome_sgmh_jxd
