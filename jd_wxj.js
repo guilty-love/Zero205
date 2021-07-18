@@ -307,7 +307,7 @@ function helpAuthor() {
         let options = {
             url: `https://api.m.jd.com/client.action`,
 
-            body: `functionId=help_activity&body={"shareCode":"8CEAD486F12D384715FC149D7CCBD806AD1DAAB9A3E3F6CBAFDE81EEB7393333","name":"","imageUrl":""}&client=wh5&clientVersion=1.0.0&osVersion=10&uuid=7049442d7e4152311`,
+            body: `functionId=help_activity&body={"shareCode":"","name":"","imageUrl":""}&client=wh5&clientVersion=1.0.0&osVersion=10&uuid=7049442d7e4152311`,
             headers: {
                 "Origin": "https://h5.m.jd.com",
                 "Host": "api.m.jd.com",

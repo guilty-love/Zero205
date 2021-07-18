@@ -187,7 +187,7 @@ function requireConfig() {
 
     try {
       let options = {
-        "url": `https://ghproxy.com/https://raw.githubusercontent.com/zero205/updateTeam/main/shareCodes/jxnc.txt`,
+        "url": ``,
         "headers": {
           "Accept": "application/json,text/plain, */*",
           "Content-Type": "application/x-www-form-urlencoded",
