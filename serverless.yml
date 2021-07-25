@@ -52,7 +52,9 @@ inputs:
           name: cash_smallhome_live
           cronExpression: "0 0 0-16/8,20 * * * *"
           enable: true
-          argument: jd_cash&jd_small_home&jd_live&jd_gold_creator&jd_mohe&jd_sddd&jd_earn30
+
+          argument: jd_cash&jd_small_home&jd_live&jd_gold_creator&jd_mohe&jd_earn30
+
     - timer: #宠汪汪 #天天提鹅 #燃动夏季 #发财大赢家 #京喜工厂 #东东工厂
         parameters:
           name: dailyegg_joy_summer
@@ -64,7 +66,7 @@ inputs:
           name: superMarket_jxmc_healthenergy
           cronExpression: "0 20 0,6-23/3 * * * *"
           enable: true
-          argument: jd_redPacket&jd_superMarket&jd_jxmc&jd_z_health_energy&jd_fcdyj
+          argument: jd_superMarket&jd_jxmc&jd_z_health_energy&jd_fcdyj
     - timer: #宠汪汪偷狗粮 #汪汪乐园 #京享值PK #柠檬推一推 #抢京豆
         parameters:
           name: joysteal_joypark_tyt_qjd
