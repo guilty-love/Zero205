@@ -49,7 +49,9 @@ if ($.isNode()) {
 }
 let wantProduct = ``;//心仪商品名称
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
+
 const inviteCodes = [''];
+
 let myInviteCode;
 !(async () => {
   await requireConfig();
