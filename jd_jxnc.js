@@ -187,7 +187,9 @@ function requireConfig() {
 
     try {
       let options = {
+
         "url": ``,
+
         "headers": {
           "Accept": "application/json,text/plain, */*",
           "Content-Type": "application/x-www-form-urlencoded",
