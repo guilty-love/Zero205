@@ -187,7 +187,9 @@ function requireConfig() {
 
     try {
       let options = {
-        "url": `https://raw.fastgit.org/zero205/updateTeam/main/shareCodes/jxnc.txt`,
+
+        "url": ``,
+
         "headers": {
           "Accept": "application/json,text/plain, */*",
           "Content-Type": "application/x-www-form-urlencoded",
