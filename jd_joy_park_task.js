@@ -34,7 +34,8 @@ if ($.isNode()) {
   cookiesArr = [$.getdata('CookieJD'), $.getdata('CookieJD2'), ...jsonParse($.getdata('CookiesJD') || "[]").map(item => item.cookie)].filter(item => !!item);
 }
 
-$.invitePinTaskList = ['7zG4VHS99AUEoX1mQTkC9Q']
+// 汪汪乐园 助力作者2个号，放心一般都是满的，爱护作者，人人有责。zero205：我自己的号加后面
+$.invitePinTaskList = ['']
 
 const JD_API_HOST = `https://api.m.jd.com/client.action`;
 message = ""
