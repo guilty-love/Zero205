@@ -65,7 +65,7 @@ inputs:
           name: joy_redPacket_superMarket_jxmc_healthenergy_fcdyj
           cronExpression: "0 20 0,6-23/2 * * * *"
           enable: true
-          argument: jd_joy&jd_redPacket&jd_superMarket&jd_jxmc&jd_z_health_energy&jd_fcdyj
+          argument: jd_joy&jd_superMarket&jd_jxmc&jd_z_health_energy&jd_fcdyj
     - timer: #宠汪汪偷狗粮 #汪汪乐园 #柠檬推一推 #京喜领88元红包
         parameters:
           name: joysteal_joypark_tyt_jxlhb
